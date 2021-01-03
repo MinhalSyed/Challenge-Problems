@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/single-number/solution/
-
+//Solution #4: uses XOR bit manipulation and is T:O(n) and S:O(1);
 public class Solution {
     public int SingleNumber(int[] nums) {
         var numsCount = new Dictionary<int,int>();
