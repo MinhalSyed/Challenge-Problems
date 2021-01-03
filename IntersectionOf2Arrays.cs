@@ -1,5 +1,6 @@
 //https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/674/
 //Intersection of Two Arrays II
+//https://leetcode.com/problems/intersection-of-two-arrays-ii/
 
 public class Solution {
     public int[] Intersect(int[] nums1, int[] nums2) {
