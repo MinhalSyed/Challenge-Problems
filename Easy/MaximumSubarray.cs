@@ -1,3 +1,5 @@
+//https://leetcode.com/explore/interview/card/top-interview-questions-easy/97/dynamic-programming/566/
+
 public class Solution {
     public int MaxSubArray(int[] nums) {
         int maxSum = nums[0];
