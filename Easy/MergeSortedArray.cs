@@ -1,3 +1,7 @@
+/*
+ I'm stupid.
+ Just start at the end of nums1. :facepalm:
+*/
 public class Solution {
     public void Merge(int[] nums1, int m, int[] nums2, int n) {
         
