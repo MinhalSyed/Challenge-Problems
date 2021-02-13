@@ -1,35 +1,33 @@
 public class Solution {
     public int ClimbStairs(int n) {
         
-        int [] dp = new int[n+1];
-
-        for(int i = 1; i < n; i ++){
-            if(i == 1){
-
+        int previous2stepsTotal  = 0;
+        int previousStepTotal = 0;
+        
+        int answer = 0;
+        
+        for(int i = 1; i <= n; i++)
+        {
+            if(i == 1)
+            {
+                answer = 1;
+                previousStepTotal = 1;
+            }
+            else if(i == 2)
+            {
+                answer = 2;
+                previous2stepsTotal = previousStepTotal;
+                previousStepTotal = 2;
+            }
+            else
+            {
+                answer = previous2stepsTotal + previousStepTotal;
+                previous2stepsTotal = previousStepTotal;
+                previousStepTotal = answer;    
             }
         }
-
-
-        return climb(n);
+        
+        
+        return answer;
     }
-
-    private int climb(int n)
-    {
-        if(n < 1)
-        {
-            return 0;
-        }
-
-        if (n == 1){
-            return 1;
-        }
-        if (n == 2){
-            return 2;
-        }
-
-        return climb(n-1) + climb(n-2);
-
-    }
-
-
 }
