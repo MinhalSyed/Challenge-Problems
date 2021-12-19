@@ -18,7 +18,7 @@ public class Program
 		HasUniqueCharacters("acfijkmopqsux").Dump();
     }
 
-    public static bool HasUniqueChars(string input)
+    public static bool HasUniqueCharacters(string input)
     {
         if(string.IsNullOrWhiteSpace(input))
         {
