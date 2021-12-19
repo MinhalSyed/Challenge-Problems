@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 
@@ -42,6 +43,28 @@ public class Program
             }
 
             charMask |= 1 << bitsToShift;
+        }
+
+        return true;
+    }
+
+    public static bool HasUniqueCharacters2(string input)
+    {
+        var charsHashSet = new HashSet<char>();
+
+        if(string.IsNullOrWhiteSpace(input))
+        {
+            return false;
+        }
+
+        for(int i =0; i < input.Length; i++)
+        {
+            if(charsHashSet.Contains(input[i]))
+            {
+                return false;
+            }
+
+            charsHashSet.Add(input[i]);
         }
 
         return true;
