@@ -26,6 +26,6 @@ class Solution:
                 if(not self.is_first_or_last_row(i, numRows)):
                     previous_char_index = index - 2 * i
                     if(previous_char_index > numRows -1 and previous_char_index < length):
-                        result_str_array.insert(len(result_str_array), s[previous_char_index])         
+                        result_str_array.append(s[previous_char_index])
         
         return ''.join(result_str_array)
